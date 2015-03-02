@@ -1,0 +1,12 @@
+<div class="well">
+  <h4 class="center"> {{reporter.name}} </h4>
+  <p> <strong>Yearsworking at The Chronicle: </strong> {{reporter.yearsEmployed }} </p>
+  <p> <strong>Born:</strong> {{reporter.birthday}} </p>
+  <p> <strong>Working these beats: </strong>
+    <ul class='list-unstyled list-inline'>
+      <li ng-repeat="beat in reporter.beats">
+        <strong>{{beat.name}}</strong> |
+      <li>
+    </ul>
+  </p>
+</div>
